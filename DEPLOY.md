@@ -24,7 +24,7 @@ fly launch
 
 ```bash
 # 创建 volume（只需要执行一次）
-fly volumes create ace96_bot_data --size 1 --region sin
+fly volumes create rolex9_bot_data --size 1 --region sin
 ```
 
 **注意：** 
@@ -79,7 +79,7 @@ fly info
 
 ```bash
 # 重启应用
-fly apps restart ace96-bot
+fly apps restart rolex9-bot
 
 # 查看应用配置
 fly config show
@@ -93,7 +93,7 @@ fly dashboard
 
 ## 注意事项
 
-1. **数据持久化**: 机器人通过 `DATA_DIR`（默认 `/data`）读写数据。`fly.toml` 中已将 volume `ace96_bot_data` 挂载到 `/data`，因此 `user_stats.json` 和 `admins.json` 会持久化保存，容器重启不会丢失。
+1. **数据持久化**: 机器人通过 `DATA_DIR`（默认 `/data`）读写数据。`fly.toml` 中已将 volume `rolex9_bot_data` 挂载到 `/data`，因此 `user_stats.json` 和 `admins.json` 会持久化保存，容器重启不会丢失。
 
 2. **环境变量**: 敏感信息（如 `BOT_TOKEN`）必须用 `fly secrets set` 设置。其他配置（如 `TELEGRAM_CHANNEL`、`FREE_SPIN_URL`、`FREE_CREDIT_URL`）可在 `config.py` 中查看默认值，需要覆盖时用 `fly secrets set`。
 

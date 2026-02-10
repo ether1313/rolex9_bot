@@ -1,4 +1,4 @@
-# Ace96au Promo Bot 🎰
+# Rolex9 Promo Bot 🎰
 
 A full-featured Telegram marketing bot with custom keyboard, promotional messages, admin management, and bulk messaging capabilities.
 
@@ -59,7 +59,7 @@ python bot.py
 ## 📁 Project Structure
 
 ```
-ace96_bot/
+rolex9_bot/
 ├── bot.py              # Main bot file with all handlers
 ├── config.py           # Configuration file with environment variables
 ├── requirements.txt    # Python dependencies
@@ -93,7 +93,7 @@ ace96_bot/
 
 ### Button Functions
 
-1. **GET FREE SPIN ON ACE96AU 🎰** - Shows free spin promotional information with inline buttons:
+1. **GET FREE SPIN ON ROLEX9 🎰** - Shows free spin promotional information with inline buttons:
    - `CHEKC FREE SPIN ON WEB 🎁` - Links to free spin URL
    - `TELEGRAM CHANNEL ❤️` - Links to Telegram channel
 
@@ -121,9 +121,9 @@ The bot prioritizes forwarding messages to preserve Premium emoji and formatting
 All configuration is done through environment variables or `.env` file:
 
 - `BOT_TOKEN` (Required) - Telegram Bot Token from @BotFather
-- `TELEGRAM_CHANNEL` (Optional) - Telegram channel URL (default: `https://t.me/ace96au`)
-- `FREE_SPIN_URL` (Optional) - Free spin promotion URL (default: `https://ace96au.com/RFACE96AUBOT9`)
-- `FREE_CREDIT_URL` (Optional) - Free credit promotion URL (default: `https://ace96au.com/RFACE96AUBOT9`)
+- `TELEGRAM_CHANNEL` (Optional) - Telegram channel URL (default: `https://t.me/rolex9`)
+- `FREE_SPIN_URL` (Optional) - Free spin promotion URL (default: `https://rolex9.com/RFROLEX9BOT9`)
+- `FREE_CREDIT_URL` (Optional) - Free credit promotion URL (default: `https://rolex9.com/RFROLEX9BOT9`)
 - `DATA_DIR` (Optional) - Directory for data files (default: `/data` for Fly.io, current directory for local)
 
 ### Customization
@@ -162,8 +162,8 @@ python bot.py
 Build and run with Docker:
 
 ```bash
-docker build -t ace96-bot .
-docker run -d --env-file .env ace96-bot
+docker build -t rolex9-bot .
+docker run -d --env-file .env rolex9-bot
 ```
 
 ### Fly.io Deployment
@@ -173,7 +173,7 @@ This bot is configured for deployment on Fly.io. See `DEPLOY.md` for detailed de
 **Quick deployment steps:**
 
 1. Install Fly CLI and login: `fly auth login`
-2. Create volume: `fly volumes create ace96_bot_data --size 1 --region sin`
+2. Create volume: `fly volumes create rolex9_bot_data --size 1 --region sin`
 3. Set secrets: `fly secrets set BOT_TOKEN="your_token"`
 4. Deploy: `fly deploy`
 
@@ -218,4 +218,4 @@ MIT License
 
 ---
 
-**Ace96au Promo Bot** - Making marketing simpler! 🚀
+**Rolex9 Promo Bot** - Making marketing simpler! 🚀
